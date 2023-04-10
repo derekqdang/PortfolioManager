@@ -1,0 +1,205 @@
+.App {
+  text-align: center;
+}
+
+
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: table-row-group-middle;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: rgb(156, 156, 156);
+  background-color: rgb(228, 226, 226);
+}
+
+
+.navbar{
+  font-size: 15px;
+  background-color: rgb(240, 240, 240);
+  font-family:'Lato', sans-serif;
+  border-color:rgb(14, 14, 14);
+  text-transform: uppercase;
+  border-radius: px;
+  padding: 15px 32px;
+  border-spacing: 10px;
+  
+}
+
+
+
+.panels > div {
+  border: 1px solid rgb(228, 226, 226);
+}
+
+.panels {
+  position: relative;
+  display: flexbox;
+  grid-gap: 10px;
+  grid-template-columns: 500px auto auto;
+  grid-template-rows: auto auto;
+}
+.WeeklyPerformance {
+  position: relative;
+  display: grid;
+  grid-gap: 0px;
+  grid-template-columns: 1600px auto auto;
+  grid-template-rows: auto auto;
+  padding-left: 6%;
+  left: -50px;
+}
+
+
+.Osig{
+  padding:20px;
+}
+
+
+
+.PositionsPanel{
+ color:black;
+ padding-left: 17%;
+ text-align: middle;
+}
+
+.PerformancePanel{
+  position: relative;
+  font-size: medium;
+  text-align: center;
+  float:right;
+  font-size: 25px;
+  color: black;
+  border: 2px solid rgb(228, 226, 226);
+  padding-left: 0px;
+  padding-top: 20px;
+}
+.title{
+  text-align: center;
+  position: relative;
+  padding-right:17%;
+}
+
+.Allocation-panel{
+  display: inline-block;
+  height: 90%;
+  width: 95%;
+  text-align: center;
+  background-color: rgb(255, 255, 255);
+}
+.CompanyHoldingsByWeight{
+  padding-top:10px;
+  padding-left:10px;
+  display: inline-flex;
+  height: 90%;
+  width: 95%;
+  text-align: center;
+  background-color: rgb(255, 255, 255);
+}
+.barChart{
+  display: inline-block;
+  height: 90%;
+  width: 95%;
+  text-align: center;
+  background-color: rgb(255, 255, 255);
+}
+.GrossMargins{
+  display: inline-block;
+  height: 90%;
+  width: 95%;
+  text-align: center;
+  background-color: rgb(255, 255, 255);
+}
+.scatterChart{
+  display: inline-block;
+  height: 70%;
+  width: 95%;
+  text-align: center;
+  background-color: rgb(255, 255, 255);
+}
+
+
+#pieChart{
+  width: 30%;
+  height: 30%;
+  background-color: rgb(253, 253, 253);
+}
+
+#barChart{
+  width: 60%;
+  height: 40%;
+}
+#GrossMargins{
+  width: 50%;
+  height: 40%;
+}
+#scatterChart{
+  width: 40%;
+  height: 40%;
+}
+
+#SectorChart{
+  width: 100%;
+  height: 80%;
+}
+
+#LineChart{
+  width: 100%;
+  height: 80%;
+
+}
+
+#footer{
+  font-size: 15px;
+}
+
+.panel-info{
+  grid-column: span 4;
+  box-sizing: border-box;
+}
+
+.column {
+  float: left;
+  width: 25%;
+  padding: 0px 0px;
+  color:black;
+}
+
+.collapsible .content {
+  padding: 6px;
+  background-color: #282c34;
+}
+
+
+@media only screen and (max-device-width: 480px){
+  .panels{
+    display: inline-block;
+    max-width: 470px;
+    
+  }
+
+  .PerformancePanel{
+    display: inline-flex;
+    
+  }
+  .panel-positions{
+    display: inline-flex;
+  }
+  #pieChart{
+    display: none;
+  }
+  #LineChart{
+    display: inline-flex;
+    
+  }
+  #barChart{
+    display: none;
+  }
+  #scatterChart{
+    display: none;
+  }
+
+}
+
